@@ -59,7 +59,7 @@ deno install --global -A -f -n serve https://raw.githubusercontent.com/nhrones/D
 I prefer installing a local copy.  Clone this repo then install with the command below.    
 This will run much faster without the roundtrip to Github.
 ```
-deno install -A --global -r -f -n serve serve.ts
+deno install --global -A -f -n serve serve.ts
 ```
 After install, you then simply type `serve` on the commandline in your project folder.
 An entry named `simple` will be placed in the `./.vscode/dev.json` file.
