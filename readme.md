@@ -52,14 +52,14 @@ After initial use, you can simply enter `serve` in the terminal and the values i
 ## Install a local copy
 Copy the command below, then paste it in any commandline, and press enter. 
 ```
-deno install --global -A -f -n serve https://raw.githubusercontent.com/nhrones/Devtools_Simple/refs/heads/main/serve.ts
+deno install --global -A -r -n serve https://raw.githubusercontent.com/nhrones/Devtools_Simple/refs/heads/main/serve.ts
 
 ```
 ## Install a local copy from a local repo
 I prefer installing a local copy.  Clone this repo then install with the command below.    
 This will run much faster without the roundtrip to Github.
 ```
-deno install -A -f -n serve serve.ts
+deno install -A --global -r -f -n serve serve.ts
 ```
 After install, you then simply type `serve` on the commandline in your project folder.
 An entry named `simple` will be placed in the `./.vscode/dev.json` file.

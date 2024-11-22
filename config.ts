@@ -1,4 +1,4 @@
-import { Config, getConfig } from './deps.ts'
+import { Config, getConfig } from "https://raw.githubusercontent.com/nhrones/Devtools_Config/refs/heads/main/mod.ts";
 
 if (Deno.args[0]) {
    // if args0 = -h or ?, show help then exit
