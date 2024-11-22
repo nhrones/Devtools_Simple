@@ -12,7 +12,7 @@ It will automaticaly launch your default browser with the index.html content.
 Open any folder in vscode that contains an `index.html` file.     
 Then, in the vscode terminal, enter or (copy-paste) the following: 
 ```
-deno run -A https://raw.githubusercontent.com/nhrones/Utilities/main/Devtools_Simple/serve.ts
+deno run -A https://raw.githubusercontent.com/nhrones/Devtools_Simple/refs/heads/main/serve.ts
 ```
 Your browser will open and display index.html at `http://localhost:80`
 
