@@ -12,7 +12,7 @@ It will automaticaly launch your default browser with the index.html content.
 Open any folder in vscode that contains an `index.html` file.     
 Then, in the vscode terminal, enter or (copy-paste) the following: 
 ```
-deno run -A --unstable https://raw.githubusercontent.com/nhrones/Utilities/main/Simple/serve.ts
+deno run -A --unstable https://raw.githubusercontent.com/nhrones/Utilities/main/Devtools_Simple/serve.ts
 ```
 Your browser will open and display index.html at `http://localhost:80`
 
@@ -52,7 +52,7 @@ After initial use, you can simply enter `serve` in the terminal and the values i
 ## Install a local copy
 Copy the command below, then paste it in any commandline, and press enter. 
 ```
-deno install -A -f -n serve https://raw.githubusercontent.com/nhrones/Utilities/main/Simple/serve.ts
+deno install --global -A -f -n serve https://raw.githubusercontent.com/nhrones/Devtools_Simple/refs/heads/main/serve.ts
 
 ```
 ## Install a local copy from a local repo
