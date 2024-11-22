@@ -52,7 +52,7 @@ After initial use, you can simply enter `serve` in the terminal and the values i
 ## Install a local copy
 Copy the command below, then paste it in any commandline, and press enter. 
 ```
-deno install --global -A -r -n serve https://raw.githubusercontent.com/nhrones/Devtools_Simple/refs/heads/main/serve.ts
+deno install --global -A -f -n serve https://raw.githubusercontent.com/nhrones/Devtools_Simple/refs/heads/main/serve.ts
 
 ```
 ## Install a local copy from a local repo
