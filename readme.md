@@ -56,8 +56,7 @@ deno install --global -A --force --name serve https://raw.githubusercontent.com/
 
 ```
 ## Install a local copy from a local repo
-I prefer installing a local copy.  Clone this repo then install with the command below.    
-This will run much faster without the roundtrip to Github.
+I prefer installing a local copy. Clone this repo then globally install it with the command below. This will run much faster without the roundtrip to Github.
 ```
 deno install --global -A --force --name serve serve.ts
 ```
@@ -66,8 +65,9 @@ An entry named `simple` will be placed in the `./.vscode/dev.json` file.
 ```json
 {
    "simple": {
-      "TargetFolder": "",
-      "Port": 80
+      "DEV": "true",
+      "Port": 80,
+      "Serve": ""
    }
 }
 ```
@@ -75,8 +75,9 @@ If your index.html file is in `./dist/`, then you would edit this json file:
 ```json
 {
    "simple": {
-      "TargetFolder": "./dist",
-      "Port": 80
+      "DEV": "true",
+      "Port": 80,
+      "Serve": "dist"
    }
 }
 ```

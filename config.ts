@@ -1,4 +1,6 @@
-import { Config, getConfig } from "https://raw.githubusercontent.com/nhrones/Devtools_Config/refs/heads/main/mod.ts";
+//import { Config, getConfig } from "https://raw.githubusercontent.com/nhrones/Devtools_Config/refs/heads/main/mod.ts";
+
+import { Config, getConfig } from "../Config/mod.ts" 
 
 if (Deno.args[0]) {
    // if args0 = -h or ?, show help then exit
@@ -32,9 +34,9 @@ if (Deno.args[0]) {
  * required Cfg
  */
 const requiredCfg = {
-   "DEV": true,
-   "Port": 80,
    "Serve": "",
+   "Port": 80,
+   "DEV": true,
 } satisfies Config
 
 // gets an existing config, or builds one
