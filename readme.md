@@ -87,5 +87,5 @@ The point of all this is to simply enter `serve` on the commandline to serve you
 
 For help with this simple server, at any time enter:
 ```
-serve ?
+serve ? 
 ``` 

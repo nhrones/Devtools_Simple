@@ -1,5 +1,5 @@
 
-import { openWebsite } from "https://raw.githubusercontent.com/nhrones/Devtools_Browser/refs/heads/main/browser.ts";
+import { openWebsite } from "jsr:@ndh/browser";
 import { join } from "jsr:@std/path";
 import { serveFile } from "jsr:@std/http";
 import { DEV, folder, port } from './config.ts'
