@@ -1,7 +1,5 @@
 
-import { openWebsite } from "jsr:@ndh/browser";
-import { join } from "jsr:@std/path";
-import { serveFile } from "jsr:@std/http";
+import { join, openWebsite, serveFile } from "./deps.ts";
 import { DEV, folder, port } from './config.ts'
 
 
