@@ -1,5 +1,5 @@
 {
-   "name": "@ndh/Simple",
+   "name": "@ndh/simple",
    "version": "1.0.0",
    "description": "A simple Deno dev server that auto opens the browser.",
    "exports": "./mod.ts",
