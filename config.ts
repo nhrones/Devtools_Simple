@@ -1,4 +1,4 @@
-import { Config, getConfig } from "jsr:@ndh/config" 
+import { Config, getConfig } from "jsr:@ndh/config@1.0.0" 
 
 
 if (Deno.args[0]) {
