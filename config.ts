@@ -1,4 +1,5 @@
-import { Config, getConfig } from "jsr:@ndh/config@1.0.0" 
+
+import { Config, getConfig }from "jsr:@ndh/config@1.0.1";
 
 
 if (Deno.args[0]) {
@@ -34,6 +35,7 @@ const requiredCfg = {
    "Serve": "",
    "Port": 80,
    "DEV": true,
+   "HtmlName": "index.html"
 } satisfies Config
 
 // gets an existing config, or builds one
@@ -41,4 +43,5 @@ const cfg = getConfig('simple', Deno.args, requiredCfg)
 
 export const DEV = cfg.DEV || false
 export const folder = cfg.Serve || ""
+export const name = cfg.HtmlName
 export const port = cfg.Port || 80
