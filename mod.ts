@@ -1,6 +1,6 @@
 
 import { join, openWebsite, serveFile } from "./deps.ts";
-import { DEV, folder, port } from './config.ts'
+import { DEV, folder, port, name } from './config.ts'
 
 
 // Start the server -> routes all requests to the handler below
@@ -11,7 +11,7 @@ async function handleRequest(request: Request): Promise<Response> {
 
    // Get and adjust the requested path name
    let { pathname } = new URL(request.url);
-   if (pathname === '/') pathname = '/index.html';
+   if (pathname === '/') pathname = '/' + name;
    // determin the requested full-path
    const fullPath = (folder.length > 0)
       ? join(Deno.cwd() + '\\' + folder + pathname)
