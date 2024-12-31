@@ -39,9 +39,9 @@ const requiredCfg = {
 } satisfies Config
 
 // gets an existing config, or builds one
-const cfg = getConfig('RUN', "1.0.9", Deno.args, requiredCfg)
+const cfg = getConfig('RUN', "1.0.10", Deno.args, requiredCfg)
 
 export const DEV = cfg.DEV || false
 export const folder = cfg.Serve || ""
-export const name = cfg.HtmlName
+export const htmlName = cfg.HtmlName
 export const port = cfg.Port || 80
