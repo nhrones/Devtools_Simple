@@ -1,5 +1,5 @@
 
-import { Config, getConfig }from "jsr:@ndh/config@1.0.3";
+import { Config, getConfig }from "./deps.ts";
 
 
 if (Deno.args[0]) {

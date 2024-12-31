@@ -1,6 +1,7 @@
 
-import { join, openWebsite, serveFile } from "./deps.ts";
+import { join, serveFile } from "./deps.ts";
 import { DEV, folder, port, name } from './config.ts'
+import { openWebsite } from "./browser.ts"
 
 
 // Start the server -> routes all requests to the handler below
