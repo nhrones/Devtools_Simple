@@ -1,6 +1,6 @@
 {
    "name": "@ndh/simple",
-   "version": "1.0.6",
+   "version": "1.0.7",
    "description": "A simple Deno dev server that auto opens the browser.",
    "exports": "./mod.ts",
    "license": "MIT",
