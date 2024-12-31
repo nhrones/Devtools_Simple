@@ -39,7 +39,7 @@ const requiredCfg = {
 } satisfies Config
 
 // gets an existing config, or builds one
-const cfg = getConfig('simple', Deno.args, requiredCfg)
+const cfg = getConfig('simple', "1.0.6", Deno.args, requiredCfg)
 
 export const DEV = cfg.DEV || false
 export const folder = cfg.Serve || ""
