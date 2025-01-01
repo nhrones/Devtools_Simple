@@ -1,5 +1,5 @@
-
 import { Config, getConfig }from "./deps.ts";
+import { version } from "./jsr.json" with { type: "json" };
 
 
 if (Deno.args[0]) {
@@ -39,7 +39,7 @@ const requiredCfg = {
 } satisfies Config
 
 // gets an existing config, or builds one
-const cfg = getConfig('RUN', "1.1.1", Deno.args, requiredCfg)
+const cfg = getConfig('RUN', version, Deno.args, requiredCfg)
 
 export const DEV = cfg.DEV || false
 export const folder = cfg.Serve || ""
